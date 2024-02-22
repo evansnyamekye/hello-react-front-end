@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchRandomGreeting } from "../redux/greetings/greetingsSlice";
 
+//functionalities for the Greeting component
+
 function Greeting() {
   const dispatch = useDispatch();
   const { greeting, isLoading, error } = useSelector((state) => state.greetings);
