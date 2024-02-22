@@ -3,11 +3,11 @@
 }
 
 .loading {
-    border: 1px solid #109b9b;
-    border-radius: 8px;
-    padding: 12px;
-    margin: 220px 190px 20px 190px;
-  }
+  border: 1px solid #109b9b;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 220px 190px 20px 190px;
+}
 
 .title {
   text-align: center;
