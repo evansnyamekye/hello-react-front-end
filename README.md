@@ -54,7 +54,7 @@ To get the project up and running on your local machine, follow these steps.
 
 ## 🔗 Integration with Hello Rails Back-End <a name="integration-with-hello-rails-back-end"></a>
 
-Here is the link to the [Hello Rails Back-End](https://github.com/evansnyamekye/hello-react-front-end)repository.
+Here is the link to the [Hello Rails Back-End](https://github.com/evansnyamekye/hello-rails-back-end)repository.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
