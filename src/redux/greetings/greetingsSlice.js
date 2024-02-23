@@ -1,5 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
+// const greetingsUrl = 'https://api.example.com/greetings/random';
+
 const greetingsUrl = 'http://127.0.0.1:3000/messages/random';
 
 export const fetchRandomGreeting = createAsyncThunk(
@@ -10,7 +12,7 @@ export const fetchRandomGreeting = createAsyncThunk(
       throw new Error('Failed to fetch.');
     }
     const data = await response.json();
-    return data.greeting;
+    return data;
   },
 );
 
