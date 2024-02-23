@@ -1,65 +1,133 @@
-# React and Redux
+<div align="center">
 
-If you are not familiar with linters and GitHub Actions, read [root level README](../README.md).
+  <h2><b>Hello React Front-End</b></h2>
 
-## Set-up GitHub Actions
+</div>
 
-This GitHub Action is going to run [ESLint](https://eslint.org/) and [Stylelint](https://stylelint.io/) to help you find style issues.
+# 📗 Table of Contents
 
-[Stylelint](https://stylelint.io/) is a linter for your stylesheets that helps you avoid errors and enforce conventions.
+- [📗 Table of Contents](#-table-of-contents)
+- [👋 Hello React Front-End](#about-project)
+  - [🛠 Project Requirements](#project-requirements)
+  - [🚀 Getting Started](#getting-started)
+    - [💻 API Endpoints](#integration-with-hello-rails-back-end)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Run the Project](#run-the-project)
+  - [👥 Author](#authors)
+  - [🔭 Issues](#issues)
+  - [🤝 Contributing](#contributing)
+  - [⭐️ Show Your Support](#️support)
+  - [📝 License](#license)
 
-[ESLint](https://eslint.org/) is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code, with the goal of making code more consistent and avoiding bugs.
+### Key Features <a name="key-features"></a>
 
-Please do the following **steps in this order**:
+- **Using the ReactJS library**
+- **Using the ReactJS Router library**
+- **Using JSX syntax**
+- **SPA Approach**
+- **Using Redux Toolkit for a global state management**
+- **Fetch API**
 
-1. In the first commit of your feature branch create a `.github/workflows` folder and add a copy of [`.github/workflows/linters.yml`](.github/workflows/linters.yml) to that folder.
-    - **Remember** to use the file linked above
-    - **Remember** that `.github` folder starts with a dot.
-2. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-    - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-3. When you open your first pull request you should see the result of the GitHub Actions:
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-![gh actions checks](../assets/images/gh-actions-eslint-stylelint-checks.png)
+---
 
-Click on the `Details` link to see the full output and the errors that need to be fixed:
+<!-- PROJECT REQUIREMENTS -->
 
-![gh actions failing checks](../assets/images/gh-actions-html-css-failing-checks.png)
+# 👋 Hello React Front-End <a name="about-project"></a>
 
-## Set-up linters in your local env
+This project is a front-end application that displays a random greeting. The application is built using React and Redux Toolkit. The application is designed to work in conjunction with the [Hello Rails Back-End].
 
-### ESLint
+## 🛠 Project Requirements <a name="project-requirements"></a>
 
-1. Run 
-    ```
-    npm install --save-dev eslint@7.x eslint-config-airbnb@18.x eslint-plugin-import@2.x eslint-plugin-jsx-a11y@6.x eslint-plugin-react@7.x eslint-plugin-react-hooks@4.x @babel/eslint-parser@7.x @babel/core@7.x  @babel/plugin-syntax-jsx@7.x  @babel/preset-react@7.x @babel/preset-react@7.x
-    ```
-    *not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).*
-2. Copy [.eslintrc.json](./.eslintrc.json) and [.babelrc](./.babelrc) to the root directory of your project.
-3. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-    - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-4. Run `npx eslint "**/*.{js,jsx}"` on the root of your directory of your project.
-5. Fix linter errors.
-6. **IMPORTANT NOTE**: feel free to research [auto-correct options for Eslint](https://eslint.org/docs/latest/user-guide/command-line-interface#fixing-problems) if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
+- Create a React app called 'hello-react-front-end'.
+- Initialize the project with Git.
+- Create the `App` component with react-router.
+- Create the `Greeting` component that displays a greeting and set it up as a route in the `App` component.
+- Create a store, an action, and a reducer that connect to your API endpoint to get the random greeting.
+- Display the random greeting in your `Greeting` component.
 
-### Stylelint
+## 🚀 Getting Started <a name="getting-started"></a>
 
-1. Run
+To get the project up and running on your local machine, follow these steps.
 
-   ```
-   npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
-   ```
+## 🔗 Integration with Hello Rails Back-End <a name="integration-with-hello-rails-back-end"></a>
 
-   *not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).*
+Here is the link to the [Hello Rails Back-End](https://github.com/evansnyamekye/hello-react-front-end/pull/1)repository.
 
-2. Copy [.stylelintrc.json](./.stylelintrc.json) to the root directory of your project.
-3. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-   - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-4. Run `npx stylelint "**/*.{css,scss}"` on the root of your directory of your project.
-5. Fix linter errors.
-6. **IMPORTANT NOTE**: feel free to research [auto-correct options for Stylelint](https://stylelint.io/user-guide/usage/options) if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Test/Deployment Actions
 
-Feel free to add your own deployment actions which can run your tests and deploy to Heroku.
+### Prerequisites
 
-Make sure that you do not modify the [`.github/workflows/linters.yml`](.github/workflows/linters.yml) but that you create a separe GitHub Action workflow file for that.
+Before you begin, make sure you have the following prerequisites installed on your system:
+
+- Node.js: You need Node.js to run the React application.
+- npm: npm is the package manager for JavaScript and comes with Node.js.
+
+### Setup
+
+Clone this repository to your desired folder:
+
+```sh
+git clone https://github.com/evansnyamekye/hello-react-front-end
+cd hello-react-front-end
+```
+
+Install dependencies:
+
+```sh
+npm install
+```
+
+### Run the Project
+
+To run the project, execute the following command:
+
+```sh
+npm start
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 👥 Author <a name="authors"></a>
+
+👤 **Evans Kofi Nyamekye**
+- GitHub: [evansnyamekye](https://github.com/evansnyamekye)
+- Twitter: [@nyamekye2131](https://twitter.com/nyamekye2131)
+- LinkedIn: [Evans Kofi Nyamekye](https://www.linkedin.com/in/evans-kofi-nyamekye-1980a4117/)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **Create the view: All Greetings list**
+- [ ] **Add custom CSS styles to the UI**
+- [ ] **Deploy the final version of the project and share Link Demo in the documentation**
+- [ ] **Create Unit tests using Jest and React testing library**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🔭 Issues <a name="issues"></a>
+
+Find a bug or have a feature request? [Open a new issue](https://github.com/evansnyamekye/hello-react-front-end/issues/2) here on GitHub.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/evansnyamekye/hello-react-front-end/issues/2).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## ⭐️ Show Your Support <a name="️support"></a>
+
+If you find this project helpful, please consider starring the repository. Your support is greatly appreciated!
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
